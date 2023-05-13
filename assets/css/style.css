@@ -45,6 +45,33 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.desc {
+    margin-top: 22px;
+    color: #5f5b53;
+}
+
+.desc.lv1 {
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
 /* Header */
 .header {
     background: #fffcf4;
@@ -188,22 +215,6 @@ nav li.active a::after {
     padding: 64px 0 0 130px;
 }
 
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
-}
-
-.hero .desc {
-    margin-top: 22px;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #5f5b53;
-}
-
 .hero .cta-group {
     display: flex;
     align-items: center;
@@ -255,4 +266,44 @@ nav li.active a::after {
     font-size: 4.4rem;
     line-height: 1.23;
     color: #171100;
+}
+
+/* Popular */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+}
+
+.popular-top .control {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.popular-top .control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
 }
