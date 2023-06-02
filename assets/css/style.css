@@ -580,12 +580,16 @@ a {
     margin-top: 55px;
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 
 .blog .item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #ffffff;
+    transition: all ease 0.3s;
+    transform: translateX(-100%);
 }
 
 .blog .item:hover {
@@ -636,15 +640,36 @@ a {
     display: inline-block;
     margin: 12px 0;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.75;
     color: #171100;
 }
 
 .blog .item .btn {
+    font-size: 1.4rem;
     padding: 0;
 }
 
 .blog .item .btn:hover {
+    background: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 38px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    cursor: default;
     background: var(--primary-color);
 }
