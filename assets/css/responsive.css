@@ -118,7 +118,7 @@
     }
 
     .popular {
-        padding-top: 60px;
+        padding: 60px 0 0;
     }
 
     .popular-top {
@@ -127,7 +127,7 @@
     }
     .popular .course-list {
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 30px;
     }
 
     .popular-top .controls {
@@ -287,6 +287,10 @@
 
     .hero-summary .title {
         font-size: 1.6rem;
+    }
+
+    .popular {
+        margin-top: 0;
     }
 
     .popular .course-list {

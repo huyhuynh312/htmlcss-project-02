@@ -11,6 +11,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 html {
@@ -31,7 +32,8 @@ a,
 input,
 textarea,
 select,
-button {
+button,
+article {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
